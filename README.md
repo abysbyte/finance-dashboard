@@ -1,6 +1,6 @@
 <div align="center">
   
-# 🏜️ Thwyzi | Immersive Bento Finance Dashboard
+# 🏜️ Thwyzi | Immersive Finance Dashboard
 
 A stunning, hyper-styled personal finance dashboard built with React and GSAP. Moving away from standard corporate templates, this project explores extreme geometries, a "Bento Box" layout, and a deeply immersive earth-tone aesthetic overlaying a photorealistic desert landscape.
 
@@ -12,7 +12,7 @@ A stunning, hyper-styled personal finance dashboard built with React and GSAP. M
 
 - **The Bento Box Aesthetic:** An interconnected grid layout with extreme border radii, transforming generic data cards into soft, distinct, tactile modules.
 - **Cinematic GSAP Animations:** Fully equipped with Greensock (GSAP) and `ScrollTrigger` for buttery-smooth entrance animations, cascading staggered visuals, and scroll-responsive reveal effects.
-- **Role-Based Experience:** Toggle between `Viewer` and `Admin` modes seamlessly from the header. 
+- **Role-Based Experience:** Toggle between `Viewer` and `Admin` modes seamlessly from the sheader. 
   - **Admins** can dynamically add and delete specific transaction records.
 - **Live Data Visualizations:** Integrated with `Recharts` to provide responsive line-charts for balance tracking, and elegantly stylized pie-charts to categorize your expenditures.
 - **Actionable Insights:** Tracks your savings rate and intelligently identifies your primary source of financial outflow, presenting tailored financial advice. 
