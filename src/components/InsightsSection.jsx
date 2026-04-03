@@ -31,7 +31,7 @@ export const InsightsSection = () => {
   }
 
   return (
-    <div className="flex flex-col gap-6 w-full" style={{ marginBottom: '2rem' }}>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6 w-full" style={{ marginBottom: '2rem' }}>
       <div className="bento-panel dark" style={{ flex: 1, minHeight: '200px' }}>
         <p style={{ fontSize: '0.875rem', color: 'var(--text-muted-light)', marginBottom: 'auto' }}>Primary Outflow</p>
         <div style={{ marginTop: '3rem' }}>

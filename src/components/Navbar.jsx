@@ -14,10 +14,10 @@ export const Navbar = () => {
       </div>
 
       {/* Center Navbar Pills */}
-      <div className="flex gap-2 p-1" style={{ background: 'rgba(255,255,255,0.05)', borderRadius: '3rem', padding: '0.25rem' }}>
-        <button className="btn-pill hover:bg-white/10" style={{ padding: '0.5rem 1.5rem', background: 'rgba(255,255,255,0.1)' }}>Overview</button>
-        <button className="btn-pill" style={{ padding: '0.5rem 1.5rem', background: 'transparent' }}>Activity</button>
-        <button className="btn-pill dark" style={{ padding: '0.5rem 2rem', marginLeft: '2rem' }}>Reports ↗</button>
+      <div className="flex flex-wrap gap-2 p-1 justify-center" style={{ background: 'rgba(255,255,255,0.05)', borderRadius: '3rem', padding: '0.25rem' }}>
+        <button className="btn-pill hover:bg-white/10" style={{ padding: '0.5rem clamp(1rem, 3vw, 1.5rem)', background: 'rgba(255,255,255,0.1)' }}>Overview</button>
+        <button className="btn-pill" style={{ padding: '0.5rem clamp(1rem, 3vw, 1.5rem)', background: 'transparent' }}>Activity</button>
+        <button className="btn-pill dark" style={{ padding: '0.5rem clamp(1rem, 3vw, 2rem)' }}>Reports ↗</button>
       </div>
 
       {/* Right Navbar Utility Icons */}

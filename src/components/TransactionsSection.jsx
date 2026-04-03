@@ -26,11 +26,11 @@ export const TransactionsSection = () => {
 
   return (
     <div className="bento-panel cream" style={{ marginBottom: '2rem' }}>
-      <div className="flex items-center justify-between" style={{ marginBottom: '2rem' }}>
-        <h3 style={{ fontSize: '1.5rem', margin: 0, letterSpacing: '-0.02em', color: 'var(--text-dark)' }}>Transactions</h3>
+      <div className="flex flex-wrap items-center justify-between gap-4" style={{ marginBottom: '2rem' }}>
+        <h3 style={{ fontSize: 'clamp(1.2rem, 5vw, 1.5rem)', margin: 0, letterSpacing: '-0.02em', color: 'var(--text-dark)' }}>Transactions</h3>
         {role === 'Admin' && (
           <button className="btn-pill dark" onClick={() => setIsAdding(!isAdding)}>
-             {isAdding ? 'Cancel' : <><Plus size={16} /> Add Record</>}
+             {isAdding ? 'Cancel' : <><Plus size={16} /> Add</>}
           </button>
         )}
       </div>
