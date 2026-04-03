@@ -42,8 +42,8 @@ npm --version
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/thwyzi-dashboard.git
-   cd thwyzi-dashboard
+   git clone https://github.com/abysbyte/finance-dashboard.git
+   cd finance-dashboard
    ```
 
 2. **Install the dependencies:**
