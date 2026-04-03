@@ -35,7 +35,7 @@ export const InsightsSection = () => {
       <div className="bento-panel dark" style={{ flex: 1, minHeight: '200px' }}>
         <p style={{ fontSize: '0.875rem', color: 'var(--text-muted-light)', marginBottom: 'auto' }}>Primary Outflow</p>
         <div style={{ marginTop: '3rem' }}>
-          <h4 style={{ fontSize: '2rem', marginBottom: '0.25rem', letterSpacing: '-0.02em' }}>{maxCategory}</h4>
+          <h4 style={{ fontSize: 'clamp(1.5rem, 5vw, 2rem)', marginBottom: '0.25rem', letterSpacing: '-0.02em' }}>{maxCategory}</h4>
           <p style={{ color: 'var(--text-muted-light)' }}>
             Largest expense category at ₹{maxAmount.toLocaleString()}.
           </p>
@@ -48,7 +48,7 @@ export const InsightsSection = () => {
            <div className="btn-pill dark" style={{ padding: '0.25rem 0.75rem', fontSize: '0.7rem' }}>SCORE</div>
         </div>
         <div style={{ marginTop: 'auto', paddingTop: '3rem' }}>
-          <h4 style={{ fontSize: '2.5rem', marginBottom: '0.25rem', letterSpacing: '-0.02em', color: 'var(--text-dark)' }}>{savingsRate.toFixed(1)}%</h4>
+          <h4 style={{ fontSize: 'clamp(2rem, 6vw, 2.5rem)', marginBottom: '0.25rem', letterSpacing: '-0.02em', color: 'var(--text-dark)' }}>{savingsRate.toFixed(1)}%</h4>
           <p style={{ color: 'var(--text-muted-dark)' }}>
             {advice}
           </p>

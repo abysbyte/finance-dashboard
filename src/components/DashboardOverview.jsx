@@ -42,7 +42,7 @@ export const DashboardOverview = () => {
       {/* 1. Main Balance */}
       <div className="bento-panel cream lg:row-span-2 flex justify-between" style={{ padding: '2.5rem', position: 'relative' }}>
         <div>
-          <h2 style={{ fontSize: '3.5rem', fontWeight: 600, letterSpacing: '-0.05em', lineHeight: 1 }}>thwyzi</h2>
+          <h2 style={{ fontSize: 'clamp(2rem, 8vw, 3.5rem)', fontWeight: 600, letterSpacing: '-0.05em', lineHeight: 1 }}>thwyzi</h2>
           <p style={{ marginTop: '3rem', fontSize: '0.85rem', fontWeight: 500, color: 'var(--text-muted-dark)' }}>
             Total Asset Balance<br />ACROSS ALL ACCOUNTS
           </p>
@@ -51,7 +51,7 @@ export const DashboardOverview = () => {
           <div className="btn-pill dark" style={{ padding: '0.5rem 1rem' }}>
             Overview <span className="btn-icon light" style={{ width: 24, height: 24, padding: 0, marginLeft: '0.5rem' }}>+</span>
           </div>
-          <h2 style={{ fontSize: '2.5rem', marginTop: 'auto', letterSpacing: '-0.05em' }}>₹{balance.toLocaleString()}</h2>
+          <h2 style={{ fontSize: 'clamp(1.5rem, 6vw, 2.5rem)', marginTop: 'auto', letterSpacing: '-0.05em' }}>₹{balance.toLocaleString()}</h2>
         </div>
       </div>
 
@@ -62,7 +62,7 @@ export const DashboardOverview = () => {
             <p style={{ fontWeight: 500, color: 'var(--text-muted-dark)' }}>Total Income</p>
             <div className="btn-icon dark"><ArrowUpRight size={18} /></div>
           </div>
-          <h2 style={{ fontSize: '2rem', marginTop: 'auto', alignSelf: 'flex-start' }}>₹{totalIncome.toLocaleString()}</h2>
+          <h2 style={{ fontSize: 'clamp(1.5rem, 5vw, 2rem)', marginTop: 'auto', alignSelf: 'flex-start' }}>₹{totalIncome.toLocaleString()}</h2>
         </div>
 
         <div className="bento-panel dark relative" style={{ minHeight: '200px' }}>
@@ -70,7 +70,7 @@ export const DashboardOverview = () => {
             <div className="btn-pill" style={{ fontSize: '0.7rem', padding: '0.2rem 0.8rem', background: 'rgba(255,255,255,0.1)' }}>NEW IN</div>
             <div className="btn-icon light"><ArrowDownRight size={18} /></div>
           </div>
-          <h2 style={{ fontSize: '2rem', marginTop: 'auto', alignSelf: 'flex-start' }}>₹{totalExpense.toLocaleString()}</h2>
+          <h2 style={{ fontSize: 'clamp(1.5rem, 5vw, 2rem)', marginTop: 'auto', alignSelf: 'flex-start' }}>₹{totalExpense.toLocaleString()}</h2>
           <p style={{ fontSize: '0.8rem', color: 'var(--text-muted-light)' }}>Total Expense</p>
         </div>
       </div>

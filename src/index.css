@@ -29,6 +29,15 @@
   --transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
+@media (max-width: 768px) {
+  :root {
+    --radius-sm: 0.75rem;
+    --radius-md: 1rem;
+    --radius-lg: 1.25rem;
+    --radius-xl: 1.5rem;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -51,6 +60,13 @@ body {
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  body {
+    padding: 0.5rem;
+    align-items: flex-start;
+  }
+}
+
 #root {
   width: 100%;
 }
@@ -69,6 +85,13 @@ body {
   min-height: 85vh;
   display: flex;
   flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .bento-app-shell {
+    padding: 1rem;
+    min-height: 98vh;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -165,6 +188,12 @@ select:focus, input:focus {
   flex-direction: column;
 }
 
+@media (max-width: 768px) {
+  .bento-panel {
+    padding: 1.25rem;
+  }
+}
+
 .bento-panel.dark {
   background-color: var(--bg-darker);
   color: var(--text-light);
@@ -186,13 +215,19 @@ select:focus, input:focus {
 }
 
 .flex { display: flex; }
+.flex-col { flex-direction: column; }
 .items-center { align-items: center; }
 .justify-between { justify-content: space-between; }
+.justify-center { justify-content: center; }
+.flex-wrap { flex-wrap: wrap; }
+
 .gap-2 { gap: 0.5rem; }
 .gap-3 { gap: 0.75rem; }
 .gap-4 { gap: 1rem; }
 .gap-6 { gap: 1.5rem; }
 .gap-8 { gap: 2rem; }
+
+.w-full { width: 100%; }
 
 .grid { display: grid; }
 .grid-cols-1 { grid-template-columns: repeat(1, 1fr); }
@@ -214,6 +249,7 @@ select:focus, input:focus {
   .lg\:grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
   .lg\:col-span-2 { grid-column: span 2 / span 2; }
   .lg\:col-span-3 { grid-column: span 3 / span 3; }
+  .lg\:row-span-2 { grid-row: span 2 / span 2; }
 }
 
 /* Scrollbar */
