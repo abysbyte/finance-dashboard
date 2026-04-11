@@ -30,17 +30,17 @@ export const TransactionsSection = () => {
         <h3 style={{ fontSize: 'clamp(1.2rem, 5vw, 1.5rem)', margin: 0, letterSpacing: '-0.02em', color: 'var(--text-dark)' }}>Transactions</h3>
         {role === 'Admin' && (
           <button className="btn-pill dark" onClick={() => setIsAdding(!isAdding)}>
-             {isAdding ? 'Cancel' : <><Plus size={16} /> Add</>}
+            {isAdding ? 'Cancel' : <><Plus size={16} /> Add</>}
           </button>
         )}
       </div>
 
       {isAdding && role === 'Admin' && (
         <form onSubmit={handleAdd} className="grid grid-cols-1 md:grid-cols-5 gap-4" style={{ marginBottom: '2rem', padding: '1.5rem', background: 'rgba(0,0,0,0.05)', borderRadius: '1.5rem' }}>
-          <input type="date" value={newTx.date} onChange={e => setNewTx({...newTx, date: e.target.value})} required style={{ background: '#fff', color: '#000', borderRadius: '1rem' }} />
-          <input type="number" placeholder="Amount" value={newTx.amount} onChange={e => setNewTx({...newTx, amount: e.target.value})} required min="0.01" step="0.01" style={{ background: '#fff', color: '#000', borderRadius: '1rem' }} />
-          <input type="text" placeholder="Category" value={newTx.category} onChange={e => setNewTx({...newTx, category: e.target.value})} required style={{ background: '#fff', color: '#000', borderRadius: '1rem' }} />
-          <select value={newTx.type} onChange={e => setNewTx({...newTx, type: e.target.value})} style={{ background: '#fff', color: '#000', borderRadius: '1rem' }}>
+          <input type="date" value={newTx.date} onChange={e => setNewTx({ ...newTx, date: e.target.value })} required style={{ background: '#fff', color: '#000', borderRadius: '1rem' }} />
+          <input type="number" placeholder="Amount" value={newTx.amount} onChange={e => setNewTx({ ...newTx, amount: e.target.value })} required min="0.01" step="0.01" style={{ background: '#fff', color: '#000', borderRadius: '1rem' }} />
+          <input type="text" placeholder="Category" value={newTx.category} onChange={e => setNewTx({ ...newTx, category: e.target.value })} required style={{ background: '#fff', color: '#000', borderRadius: '1rem' }} />
+          <select value={newTx.type} onChange={e => setNewTx({ ...newTx, type: e.target.value })} style={{ background: '#fff', color: '#000', borderRadius: '1rem' }}>
             <option value="Expense">Expense</option>
             <option value="Income">Income</option>
           </select>
@@ -51,9 +51,9 @@ export const TransactionsSection = () => {
       <div className="flex items-center gap-4 flex-wrap" style={{ marginBottom: '2rem' }}>
         <div style={{ position: 'relative', flex: '1 1 200px' }}>
           <Search size={18} className="text-muted-dark" style={{ position: 'absolute', left: '1rem', top: '50%', transform: 'translateY(-50%)', color: 'var(--text-muted-dark)' }} />
-          <input 
-            type="text" 
-            placeholder="Search by category..." 
+          <input
+            type="text"
+            placeholder="Search by category..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             style={{ width: '100%', paddingLeft: '3rem', backgroundColor: '#fff', color: '#000', border: 'none', borderRadius: '2rem' }}
@@ -84,8 +84,8 @@ export const TransactionsSection = () => {
                   <td style={{ padding: '1rem', fontSize: '0.875rem', color: 'var(--text-muted-dark)' }}>{t.date}</td>
                   <td style={{ padding: '1rem', fontWeight: 500, fontSize: '0.875rem' }}>{t.category}</td>
                   <td style={{ padding: '1rem' }}>
-                    <span style={{ 
-                      padding: '0.25rem 0.75rem', 
+                    <span style={{
+                      padding: '0.25rem 0.75rem',
                       fontSize: '0.75rem',
                       fontWeight: 500,
                       borderRadius: '1rem',
@@ -106,7 +106,7 @@ export const TransactionsSection = () => {
                 </tr>
               ))
             ) : (
-               <tr>
+              <tr>
                 <td colSpan={role === 'Admin' ? 5 : 4} style={{ padding: '3rem 0', textAlign: 'center', color: 'var(--text-muted-dark)', fontSize: '0.875rem' }}>
                   No records found.
                 </td>

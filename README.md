@@ -6,6 +6,8 @@ A stunning, hyper-styled personal finance dashboard built with React and GSAP. M
 
 </div>
 
+** Live preview ** : https://thwyzi-finance.vercel.app/
+
 ---
 
 ## ✨ Features
