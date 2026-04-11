@@ -10,6 +10,16 @@ A stunning, hyper-styled personal finance dashboard built with React and GSAP. M
 
 ---
 
+## Demo Experience
+
+
+
+https://github.com/user-attachments/assets/8b02eb74-f53a-4c18-b18f-b0e11918b7e2
+
+
+
+
+
 ## ✨ Features
 
 - **The Bento Box Aesthetic:** An interconnected grid layout with extreme border radii, transforming generic data cards into soft, distinct, tactile modules.
